@@ -102,6 +102,3 @@ class PasswordsChangeView(PasswordChangeView):
 def change_success(request):
     return render(request, 'change_success.html', {})
 
-def trangchu (request):
-    return render(request, 'trang_chu.html')
-

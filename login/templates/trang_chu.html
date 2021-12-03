@@ -75,18 +75,18 @@
                                     <nav> 
                                         <ul id="navigation">                                                                                                                   
                                             <li><a href="trang_chu.html">Trang chủ</a></li>
-                                            <li><a href="camnang.html">Cẩm nang du lịch</a>
+                                            <li><a href="{% url 'cn_detail' %}">Cẩm nang du lịch</a>
                                                 <ul class="submenu">
                                                     <li>
-                                                        <a href="MienBac.html">Miền Bắc</a>
+                                                        <a href="{% url 'cn_mienbac' %}">Miền Bắc</a>
                                                         <ul class="submenu sub">
-                                                            <li><a href="LaoCai.html">Lào Cai</a></li>
+                                                            <li><a href="{% url 'cn_laocai' %}">Lào Cai</a></li>
                                                             <li><a href="HaNoi.html">Hà Nội</a></li>
                                                             <li><a href="HaiPhong.html">Hải Phòng</a></li>
                                                         </ul>
                                                     </li>
                                                     <li>
-                                                        <a href="MienTrung.html">Miền Trung</a>
+                                                        <a href="{% url 'cn_mientrung' %}">Miền Trung</a>
                                                         <ul class="submenu sub">
                                                             <li><a href="Hue.html">Huế</a></li>
                                                             <li><a href="QuangNam.html">Quảng Nam</a></li>
@@ -96,7 +96,7 @@
                                                         </ul>
                                                     </li>
                                                     <li>
-                                                        <a href="MienNam.html">Miền Nam</a>
+                                                        <a href="{% url 'cn_miennam' %}">Miền Nam</a>
                                                         <ul class="submenu sub">
                                                             <li><a href="VungTau.html">Vũng Tàu</a></li>
                                                             <li><a href="DaLat.html">Đà Lạt</a></li>
@@ -178,7 +178,7 @@
                             <div class="slider_text text-center">
                                 <h3>Vũng Tàu</h3>
                                 <p>Vũng Tàu mang trong mình đầy đủ cảnh sắc của núi trời, non nước</p>
-                                <a href="VungTau.html" class="boxed-btn">Khám phá</a>
+                                <a href="{% url 'cn_vungtau' %}" class="boxed-btn">Khám phá</a>
                             </div>
                         </div>
                     </div>
@@ -191,7 +191,7 @@
                             <div class="slider_text text-center">
                                 <h3>Huế</h3>
                                 <p style="text-align: center !important;">Thành phố Huế mộng, mơ đậm đà bản sắc dân tộc</p>
-                                <a href="Hue.html" class="boxed-btn">Khám phá</a>
+                                <a href="{% url 'cn_hue' %}" class="boxed-btn">Khám phá</a>
                             </div>
                         </div>
                     </div>
@@ -204,7 +204,7 @@
                             <div class="slider_text text-center">
                                 <h3>Lào Cai</h3>
                                 <p style="text-align: center !important;">Đồi núi cao với những thửa ruộng bậc thang tuyệt đẹp</p>
-                                <a href="LaoCai.html" class="boxed-btn">Khám phá</a>
+                                <a href="{% url 'cn_laocai' %}" class="boxed-btn">Khám phá</a>
                             </div>
                         </div>
                     </div>
@@ -217,7 +217,7 @@
                             <div class="slider_text text-center">
                                 <h3>Hà Nội</h3>
                                 <p style="text-align: center !important;">Hà Nội, thủ đô của Việt Nam, nổi tiếng với kiến trúc trăm tuổi và nền văn hóa phong phú</p>
-                                <a href="HaNoi.html" class="boxed-btn">Khám phá</a>
+                                <a href="{% url 'cn_hanoi' %}" class="boxed-btn">Khám phá</a>
                             </div>
                         </div>
                     </div>

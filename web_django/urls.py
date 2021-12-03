@@ -15,14 +15,18 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.urls import path
+from django.shortcuts import render
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
+from hotel import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    path(r'', include('login.urls')),
-    path(r'trangchu/weather', include('weather.urls')),
-    path(r'trangchu/hotel/', include('hotel.urls')),
-    path(r'trangchu/', include('camnang.urls'))
+    url(r'trangchu/', views.trangchu, name='trangchu'),
+    path(r'accounts/', include('login.urls')),
+    path(r'weather/', include('weather.urls')),
+    path(r'hotels/', include('hotel.urls')),
+    path(r'camnang/', include('camnang.urls')),
+    
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
