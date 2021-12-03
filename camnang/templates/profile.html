@@ -1,0 +1,318 @@
+{% load static %}
+<!doctype html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <title>NAPUN</title>
+        <meta name="description" content="du lịch, khách sạn, đặt khách sạn, cẩm nang du lịch, nhà nghỉ, du lịch Việt Nam, vẻ đẹp Việt Nam">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="/img/logo/logo-icon.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css">
+        <link rel="stylesheet" href="{% static 'css/slicknav.css'%}">
+        <link rel="stylesheet" href="{% static 'css/profile.css'%}">
+        <link rel="stylesheet" href="{% static 'css/style.css'%}">
+        <script src="https://kit.fontawesome.com/1fda624724.js"></script>
+
+        <style>
+            .user:hover {
+                cursor: pointer;
+            }
+        </style>
+   </head>
+   
+   <body class="animsition">
+        <header>
+            <div class="header-area">
+                    <div class="main-header ">
+                        <div class="header-top d-none d-lg-block">
+                        <div class="container-fluid">
+                            <div class="col-xl-12">
+                                    <div class="row d-flex justify-content-between align-items-center">
+                                        <div class="header-info-left">
+                                            <ul>     
+                                                <li>
+                                                    <i class="fas fa-phone" style="color: #ff5f13;"></i>
+                                                    +(84) 1234-567-8901</li>
+                                                <li>
+                                                    <i class="fas fa-envelope" style="color: #ff5f13;"></i>
+                                                    napun123@gmail.com</li>
+                                            </ul>
+                                        </div>
+                                        <div class="header-info-right">
+                                            <ul class="header-social">    
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="header-bottom  header-sticky">
+                        <div class="container-fluid">
+                            <div class="row align-items-center">
+                                <!-- Logo -->
+                                <div class="col-xl-1 col-lg-1 col-md-1">
+                                    <div class="logo">
+                                        <a href="trang_chu.html" class="small-logo"><img src="img/logo/logo.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-11 col-lg-11 col-md-11">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu f-right d-none d-lg-block">
+                                        <nav> 
+                                            <ul id="navigation">                                                                                                                   
+                                                <li><a href="trang_chu.html">Trang chủ</a></li>
+                                                <li><a href="camnang.html">Cẩm nang du lịch</a>
+                                                    <ul class="submenu">
+                                                        <li>
+                                                            <a href="MienBac.html">Miền Bắc</a>
+                                                            <ul class="submenu sub">
+                                                                <li><a href="LaoCai.html">Lào Cai</a></li>
+                                                                <li><a href="HaNoi.html">Hà Nội</a></li>
+                                                                <li><a href="HaiPhong.html">Hải Phòng</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="MienTrung.html">Miền Trung</a>
+                                                            <ul class="submenu sub">
+                                                                <li><a href="Hue.html">Huế</a></li>
+                                                                <li><a href="QuangNam.html">Quảng Nam</a></li>
+                                                                <li><a href="PhuYen.html">Phú Yên</a></li>
+                                                                <li><a href="DaNang.html">Đà Nẵng</a></li>
+                                                                <li><a href="QuangBinh.html">Quảng Bình</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="MienNam.html">Miền Nam</a>
+                                                            <ul class="submenu sub">
+                                                                <li><a href="VungTau.html">Vũng Tàu</a></li>
+                                                                <li><a href="DaLat.html">Đà Lạt</a></li>
+                                                                <li><a href="PhuQuoc.html">Phú Quốc</a></li>
+                                                                <li><a href="AnGiang.html">An Giang</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="khach_san.html">Đặt khách sạn</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="#">Khách sạn Huế</a></li>
+                                                        <li><a href="#">Khách sạn Hà Nội</a></li>
+                                                        <li><a href="#">Khách sạn Đà Nẵng</a></li>
+                                                        <li><a href="#">Khách sạn Vũng Tàu</a></li>
+                                                        <li><a href="#">Khách sạn Đà Lạt</a></li>
+                                                    </ul>    
+                                                </li>
+                                                <li><a href="#">Thời tiết</a></li>
+                                                <li><a href="contact.html">Liên hệ</a></li>
+                                                <li>
+                                                    <a>
+                                                        <div class="search-box">
+                                                            <div class ="input-box">
+                                                                <input type="text" placeholder="Search...">
+                                                            </div>
+                                                            <div class="search-button">
+                                                                <i class="fas fa-search"></i>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="profile.html">
+                                                        <div class="user" style="padding: 5px;">
+                                                            <img id="user-avt" src="https://i.pinimg.com/474x/ec/1a/7a/ec1a7a57aef5c8384e1a53a340725554.jpg" alt="" width="30px" height="30px" style="border-radius: 50%;">
+                                                            &ensp;<span id="username" style="cursor: pointer; font-weight: 500;">{{request.user}}</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>             
+                                <div class="col-12">
+                                    <div class="mobile_menu d-block d-lg-none"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="user-profile section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 col-lg-4 offset-lg-0">
+                        <div class="sidebar">
+                            <!-- User Widget -->
+                            <div class="widget user-dashboard-profile">
+                                <!-- User Image -->
+                                <div class="profile-thumb">
+                                    <img src="https://i.pinimg.com/474x/ec/1a/7a/ec1a7a57aef5c8384e1a53a340725554.jpg" alt="" class="rounded-circle">
+                                </div>
+                                <!-- User Name -->
+                                <h5 id ="username" class="text-center">{{request.user}}</h5>
+                                <p id="joined-date">{{request.user.joined_date}}</p>
+                            </div>
+                            <!-- Dashboard Links -->
+                            <div class="widget user-dashboard-menu">
+                                <ul>
+                                    <li>
+                                        <a href="profile.html"><i class="fa fa-user"></i> Trang cá nhân</a></li>
+                                    <li>
+                                        <a href="history.html"><i class="fa fa-history"></i>Lịch sử đặt khách sạn</a>
+                                    </li>
+                                    <li>
+                                        <span><a href="{% url 'logout' %}"><i class="fa fa-cog"></i>Đăng xuất</a></span>
+                                       
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-0">
+                        <!-- Edit Personal Info -->
+                        
+                        <div class="widget personal-info">
+                            <h3 class="widget-header user">Chỉnh sửa trang cá nhân</h3>
+
+                                <form method = 'POST' cation='.'>
+                                    {% csrf_token %}
+                                    {% load widget_tweaks %}
+                                    <!-- First Name -->
+
+                                    <div class="form-group">
+                                        <label for="last-name">Tên đăng nhập</label>
+                                        {% render_field form.username class="form-control" id="last-name" value="{{request.user.username}}" %}
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="last-name">Họ</label>
+                                        {% render_field form.first_name class="form-control" id="last-name" value="{{user.first_name}}" %}
+                                    </div>
+                                    <!-- Last Name -->
+                                    <div class="form-group">
+                                        <label for="last-name">Tên</label>
+                                        {% render_field form.last_name class="form-control" id="last-name" value="{{user.last_name}}" %}
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="last-name">Email</label>
+                                        {% render_field form.email class="form-control" id="last-name" value="{{request.user.email}}" %}
+                                        <!-- <input type="text" class="form-control" id="last-name" value="{{request.user.email}}"> -->
+                                    </div>
+                                    <!-- Submit button -->
+                                    <input class="btn btn-transparent" type="submit" value="LƯU" />
+                                </form>
+                            <!--  -->
+                        </div>
+                        <!-- Change Password -->
+                        <div class="widget change-password">
+                            <h3 class="widget-header user">Đổi ảnh đại diện</h3>
+                            <form action="#">
+                                <!-- Current Password -->
+                                  <!-- File chooser -->
+                                  <div class="form-group choose-file">
+                                    <i class="fa fa-user text-center"></i>
+                                    <input type="file" class="form-control-file d-inline" id="input-file">
+                                 </div>
+                                <!-- Submit Button -->
+                                <button class="btn btn-transparent">Thay đổi</button>
+                            </form>
+                        </div>
+
+                        <div class="widget change-password">
+                            <h3 class="widget-header user">Đổi mật khẩu</h3>
+                            <form action="#">
+                                <!-- Submit Button -->
+                                <button class="btn btn-transparent""><a href="/change_password" style="color: #fff">Đổi Mật Khẩu</a></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+        <br><br><br><br><br>
+        <footer>
+            <!-- Footer Start-->
+            <div class="footer-main" style="max-width: 1600px;">
+                <div class="footer-area footer-padding">
+                    <div class="container">
+                        <div class="row  justify-content-between">
+                            <div class="col-lg-5 col-md-4 col-sm-8">
+                                <div class="single-footer-caption mb-30">
+                                    <!-- logo -->
+                                    <div class="footer-logo">
+                                        <a href="trang_chu.html"><img src="img/logo/logo.png" alt=""></a>
+                                    </div>
+                                    <div class="footer-tittle">
+                                        <div class="footer-pera">
+                                            <p class="info">Chúng ta bắt đầu biết đi ngay từ khi còn bé. Vậy nên không có lý do gì khi đôi chân đang khỏe mà bạn lại phải ngồi im.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-5">
+                                <div class="single-footer-caption mb-50">
+                                    <div class="footer-tittle">
+                                        <h4>Truy cập nhanh</h4>
+                                        <ul>
+                                            <li><a href="camnang.html" class="a">Cẩm nang du lịch</a></li>
+                                            <li><a href="khach_san.html" class="a">Đặt Khách sạn</a></li>
+                                            <li><a href="#" class="a">Thời tiết</a></li>
+                                            <li><a href="contact.html" class="a">Liên hệ</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-7">
+                                <div class="single-footer-caption mb-50">
+                                    <div class="footer-tittle">
+                                        <h4>Liên hệ với chúng tôi</h4>
+                                        <div class="footer-pera">
+                                            <p class="info">1111 Kha Vạn Cân, Linh Trung, Thủ Đức, TP.HCM</p>
+                                        </div>
+                                        <ul>
+                                            <li>Email: napun123@gmail.com</li>
+                                            <li>Phone: +(84) 1234-567-8901</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- Copy-Right -->
+                        <div class="row align-items-center">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <div class="footer-copy-right">
+                                    <p>
+                                        Copyright &copy;
+                                        <script>
+                                            document.write(new Date().getFullYear());
+                                        </script>
+                                        | NAPUN - Cẩm nang du lịch và Đặt khách sạn <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End-->
+        </footer>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollup/2.4.1/jquery.scrollUp.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.js"></script>
+        {% comment %} <script src="js/contact.js"></script> {% endcomment %}
+        <script src="{% static 'js/contact.js'%}"></script> 
+		<!-- Main Jquery -->	
+        <script src="{% static 'js/main.js'%}"></script> 
+    </body>
+</html>
